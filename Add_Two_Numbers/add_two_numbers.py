@@ -1,14 +1,13 @@
-def addTwoNumbers(l1, l2):
-    new_list = []
-    i=0
-    carry = 0
-    while i < len(l1) and i < len(l2) or carry:
-        num1 = l1[i] if i < len(l1) else 0
-        num2 = l2[i] if i < len(l2) else 0
-        total = num1 + num2 + carry
-        carry = total // 10
-        new_list.append(total % 10)
-        i+=1
-    return new_list
+def isPalindrome(x):
+    x = str(x)
+    left, right= 0, len(x)-1
 
-print(addTwoNumbers(l1 = [2,4,3], l2 = [5,6,4]))
+    while left < right:
+        if x[left] != x[right]:
+            return False
+        left +=1
+        right -=1
+
+    return True
+
+print(isPalindrome(1000021))  
