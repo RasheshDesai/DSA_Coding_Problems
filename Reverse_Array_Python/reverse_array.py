@@ -15,3 +15,11 @@ def reverse_array(s):
     return "".join(l)
 
 print(reverse_array("My Name is Rashesh Desai"))    
+
+
+#def reverse_integer(x):
+
+x = 123
+new = list(x)
+
+print(new)
