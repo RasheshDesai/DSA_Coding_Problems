@@ -4,7 +4,7 @@ def lengthOfLastWord(s):
     s = s.split()
     return len(s[-1])
 
-# Solutionn 
+# Solution two
 
 def lengthOfLastWord(s):
     s = s.split()
