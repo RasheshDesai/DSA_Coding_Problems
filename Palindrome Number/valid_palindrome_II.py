@@ -16,4 +16,4 @@ def validPalindrome(s: str) -> bool:
         right -= 1
     return True
 
-#print(validPalindrome(s="abca"))
+print(validPalindrome(s="abca"))
